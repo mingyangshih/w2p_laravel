@@ -1,0 +1,69 @@
+.card{
+  max-height: 424px;
+  max-width: 360px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover{
+    .imgBox,.card-body{
+      opacity: .5;
+    }
+  }
+}
+@media(max-width:640px){
+  .card{
+    margin-bottom: 46px;
+  }
+}
+
+// 讓照片永存  相片下方  白色部分
+.card-body{
+  height: 64px;
+  box-sizing: border-box;
+  h5{
+    margin-bottom: 0;
+  }
+}
+@media(max-width: 640px){
+  .card-body{
+    height: 40px;
+    padding:10px 0;
+    font-size: 24px;
+    h5{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      height: 100%;
+      font-size: .6em;
+    }
+  }
+}
+
+// 讓照片永存 相片部分
+.imgBox{
+  max-height: 360px;
+  max-width: 360px;
+  overflow: hidden;
+  img{
+    max-width: 360px;
+    max-height: 360px;
+    transform:scale(1,1);
+  }
+}
+// 讓照片永存，手機般相片間距
+@media(max-width: 640px){
+  .letPhotoForeverProduct{
+    .col-6:nth-child(2n){
+      padding: 0 15px 0 5px;
+    }
+    .col-6:nth-child(2n + 1){
+      padding: 0 5px 0 15px;
+    }
+  }  
+}
+
+// 調整讓照片永存的container 設定
+@media(max-width: 640px){
+  .letPhotoForeverProduct.container{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,108 @@
+.tpx-bar-container{
+  width: auto;
+}
+.topNav{
+  height: 80px;
+  align-items:center;
+  background: white;
+  width: 100%;
+  display: flex;
+  .xBox{
+    display: none;
+  }
+}
+.home{
+  max-width:220px;
+  img{
+    width:100%;
+  }
+}
+.item{
+  color:black;
+  font-weight: bold;
+  margin-left: 45px;
+  font-size: 15px;
+  &.register,&.login,&.myItem{
+    cursor: pointer;
+    display: flex;
+  }
+  &.register{
+    margin-left: auto;
+  }
+  &.allProd{
+    position:relative;
+    cursor: pointer;
+    height: 100%;
+  }
+  &.saledHelp,&.aboutUs,&.contactUs{
+    display: none;
+  }
+  &.allProd.deskTop{
+    display: flex;
+  }
+  &.helpCenter{
+    cursor: pointer;
+  }
+  // &.myItem{
+  //   margin-left: 45px;
+  // }
+}
+.dropDownMenu{
+  position: absolute;
+  top: 100%;
+}
+.item.allProd:hover{
+  .dropDownMenu{
+    display: block;
+  }
+  .styleDropDownMenu{
+    display:block;
+  }
+}
+.dropDownMenu{
+  display: none;
+  min-width: 41rem;
+  padding: 0 16px;
+  box-sizing: border-box;
+  left: -222px;
+  top: calc(100% - 2px);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  color: black;
+  &::before{
+    display:block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 10px #fefefe;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 90px);
+    z-index: 100000;
+  }
+  &::after{
+    display:block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-bottom: solid 11px rgba(0,0,0,.3);
+    border-left: solid 11px transparent;
+    border-right: solid 11px transparent;
+    position: absolute;
+    top: -21px;
+    left: calc(50% - 91px);
+    z-index: 1;
+  }
+  .itemHover{
+    color:black;
+  }
+  .itemHover:hover{
+    color: rgba(0,0,0,.3);
+  }
+}
+// 活動
+.activity{
+  color:#f24f55;
+}

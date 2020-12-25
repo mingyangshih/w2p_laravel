@@ -1,0 +1,78 @@
+// second banner
+$s14: 14px;
+$s20: 20px;
+$serif: 'Noto Serif TC', serif;
+.secondBanner{
+  overflow: hidden;
+  img{
+    max-height: 600px;
+  }
+}
+@media(max-width: 640px){
+  .secondBanner{
+    overflow: hidden;
+    img{
+      max-height: 480px;
+    }
+    height: 480px;
+    order:2;
+  }
+  .secondBannerDesBox{
+    order:1;
+    max-height: 676px;
+    .try{
+      justify-content: center;
+    }
+  }
+}
+.secondBannerDes{
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  // height: 600px;
+  .title{
+    font-size: 32px;
+    font-family: $serif;
+    letter-spacing: 1px;
+  }
+  .num{
+    width: $s20;
+    height: $s20;
+    border-radius: 50%;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 16px;
+  }
+  .step{
+    font-size: $s20;
+  }
+  .stepDes{
+    margin-left: 36px;
+    font-weight:bold;
+  }
+}
+@media(min-width:640px){
+  .secondBannerDes{
+    height: 600px;
+  }
+}
+@media(max-width: 640px){
+  .secondBannerDes{
+    box-sizing: border-box;
+    padding:16px;
+    max-height: 600px;
+    .title{
+      text-align: center;
+      font-size: 6vw;
+    }
+  }
+}
+@media(max-width:690px){
+  .secondBannerDes{
+    .title{
+      font-size: 23px;
+    }
+  }
+}

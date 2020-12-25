@@ -1,0 +1,21 @@
+// 頁面中的Btn樣式
+.btnInPage{
+  border-radius: 5px;
+  width: 203px;
+  height: 39px;
+  font-size: 21px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fa-chevron-right{
+    margin-left: 37px;
+  }
+}
+@media(max-width: 640px){
+  .btnInPage{
+    // width: 332px;
+    padding-left: 0;
+  }
+}

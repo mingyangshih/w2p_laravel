@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020/11/6, 上午 11:19:41
+    Author     : smy
+*/
+@import './swiper';
+
+$serif: 'Noto Serif TC', serif;
+.home{
+  width:100%;
+  overflow-x: hidden;
+}
+.eachTitle{
+  font-family: $serif;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.eachSecondTitle{
+  font-size: 20px;
+}
+
+// 讓照片永存
+.letPhotoForever{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.letPhotoForeverProduct{
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+@media(max-width: 640px){
+  .letPhotoForeverProduct{
+    padding-bottom: 0;
+  }
+}

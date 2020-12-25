@@ -1,0 +1,101 @@
+.footer{
+  background-color: #f4f4f1;
+  position: relative;
+}
+.footerContent{
+  font-size: 17px;
+}
+.footerTitle{
+  font-size: 21px;
+}
+@media(max-width:640px){
+  .footerContent{
+    p,a{
+      padding-left: 16px;
+    }
+  }
+  .aboutUsBox{
+    flex-direction: column;
+  }
+}
+// 頁面中的Btn樣式
+.btnInPage{
+  border-radius: 5px;
+  width: 203px;
+  height: 39px;
+  font-size: 21px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .fa-chevron-right{
+    margin-left: 37px;
+  }
+}
+// footer container 窄一點
+@media (min-width: 1200px){
+  footer.container{
+    max-width: 960px;
+  }
+}
+.link{
+  cursor: pointer;
+  &:hover{
+    opacity: .4;
+  }
+}
+
+// contactUsBox
+
+@media(max-width:640px){
+  .contactUsBox{
+    display:flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    .workTimePC{
+      display: none;
+    }
+    .workTimeMB{
+      display: block;
+    }
+  }
+  .contactUsTitlePC{
+    display:none;
+  }
+  .contactUsTitleMB{
+    display: flex;
+  }
+}
+@media(min-width:640px){
+  .workTimePC{
+    display: block;
+  }
+  .workTimeMB{
+    display: none;
+  }
+  .contactUsTitlePC{
+    display:block;
+  }
+  .contactUsTitleMB{
+    display: none;
+  }
+}
+
+.w2pemail{
+  font-size: 14px;
+}
+
+@media(max-width: 641px){
+  .socialIconBox{
+    margin-top: 16px;
+  }
+}
+
+.ig{
+  width: 22px;
+}
+.fb{
+  width: 24px;
+}

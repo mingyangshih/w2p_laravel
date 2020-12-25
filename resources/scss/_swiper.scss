@@ -1,0 +1,32 @@
+// swiper
+.mobile{
+  display:none;
+}
+.desktop{
+  display:initial;
+}
+@media(max-width:640px){
+   .mobile{
+     display:initial;
+   }
+   .desktop{
+     display:none;
+   }
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+  &.mobile{
+    display: none;
+  }
+}
+@media(max-width:641px){
+  .swiper-container {
+    &.pc{
+      display:none;
+    }
+    &.mobile{
+      display:initial;
+    }
+  }
+}

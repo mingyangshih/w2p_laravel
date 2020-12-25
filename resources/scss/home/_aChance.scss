@@ -1,0 +1,52 @@
+// 一個機會，讓生活獨特
+.aChance{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+.aChanceBox{
+  .aChanceInsideBox{
+    position:relative;
+    .wordBox{
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 100;
+      &:hover{
+        background: rgba(255,255,255,.4);
+      }
+      .wordBoxTitle{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .wordBoxTitleEn{
+        font-size: 14px;
+      }
+      .standard{
+        font-size:14px;
+      }
+    }
+    img{
+      z-index: 1;
+      max-width:650px;
+    }
+  }
+}
+@media(max-width: 640px) {
+  .aChanceBox{
+    .aChanceInsideBox{
+      .wordBox{
+        .wordBoxTitle{
+          font-size: 4vw;
+          font-weight: bold;
+        }
+        .wordBoxTitleEn{
+          font-size: 2vw;
+        }
+        .standard{
+          font-size:2vw;
+        }
+      }
+    }
+  }
+}

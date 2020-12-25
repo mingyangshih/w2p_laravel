@@ -1,0 +1,22 @@
+.copyright{
+  font-size: 13px;
+  padding: 20px 0;
+}
+p:nth-child(2){
+  margin-bottom: 0;
+}
+@media (min-width: 1200px){
+  .copyright{
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: 1395px;
+    }
+  }
+  
+}
+@media(max-width:641px){
+  .copyright{
+    .container{
+      flex-direction: column;
+    }
+  }
+}
