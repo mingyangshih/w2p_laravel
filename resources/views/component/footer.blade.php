@@ -33,10 +33,10 @@
       <a href="#" class="btn btn-primary font-weight-bold btnInPage pr-0 py-0 mt-3 text-decoration-none contactUsTitleMB">聯絡我們 <i class="fas fa-chevron-right fa-xs"></i></a>
       <div class="d-flex align-items-center socialIconBox">
         <a href="https://www.facebook.com/cloudw2p.tw" target="_blank">
-          <img src="static/fb.svg" class="fb">
+          <img src="/static/fb.svg" class="fb">
         </a>
         <a href="https://www.instagram.com/cloudw2p/" target="_blank" class="ml-2">
-          <img src="static/ig.png" class="ig">
+          <img src="/static/ig.png" class="ig">
         </a>
         {{-- <div class="FBTEST">
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcloudw2p.tw%2F&tabs=timeline&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=326337338443023" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>

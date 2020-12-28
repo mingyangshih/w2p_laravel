@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 /*
@@ -33,8 +33,9 @@ class homeController extends Controller
          $mb = $banner->data[1]->mobile;
          $totalCategory = $this->totalCategory;
          $menu = $this->menu;
+         $categoryId = $this->categoryId;
         //  var_dump($menu);
-         return View('home',['pc' => $pc, 'mb' => $mb, 'index' => $getIndex, 'category' => $getCategory, 'totalCategory' => $totalCategory] );
+         return View('home',['pc' => $pc, 'mb' => $mb, 'index' => $getIndex, 'category' => $getCategory, 'totalCategory' => $totalCategory, 'menu' => $menu, 'categoryId'=>$categoryId] );
     }
 }
 

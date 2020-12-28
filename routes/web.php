@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\homeController;
+// use App\Http\Controllers\homeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +17,8 @@ use App\Http\Controllers\homeController;
 
 // homepage
 Route::get('/','App\Http\Controllers\homeController@getHomeData');
+// productdetail
+Route::get('/productDetail/{id}','App\Http\Controllers\productDetailController@init');
 
 
 

@@ -13,6 +13,7 @@ class Controller extends BaseController
     public $menu;
     // 產品全部大類
     public $totalCategory = Array();
+    public $categoryId = Array();
     public function __construct() {
         $data = $this->callAPI('GET','product/getmenu');
         $this->menu = json_decode($data)->data;
@@ -20,6 +21,7 @@ class Controller extends BaseController
         foreach($this->menu as $item) {
             if(!in_array($item->productCategory, $this->totalCategory)) {
                 $this->totalCategory[] = $item->productCategory;
+                $this->categoryId[] = $item->categoryId;
             }
         }
         // 計算各大類下的產品數量(用來決定是否要讓下拉選單可連到大類頁)
@@ -35,8 +37,6 @@ class Controller extends BaseController
                 }
             }
         }
-        
-        // var_dump($this->menu);
     }
     // call api Method
     public function callAPI($method,$url) {

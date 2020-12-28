@@ -2,17 +2,22 @@
   <div class="container px-0 mx-md-6">
     <div id="tpx-basket-bar" class="row justify-content-between align-items-center tpx mx-0 py-0 border-bottom-0 topNavBox">
       <div class="tpx tpx-bar-container tpx-clearfix topNav" id="tpx-basket-bar-inner">
-        <div class="home">
-          <img src="static//logo-big.png" alt="logo">   
-        </div>
+        <a href="/" class="home">
+          <img src="/static/logo-big.png" alt="logo">   
+        </a>
         {{-- hover 選單 --}}
         <nav class="item allProd mb-0 align-items-center deskTop">所有產品
           <div class="dropDownMenu bg-white px-3">
             <div class="text-decoration-none row">
-              @foreach ($totalCategory as $item)
+              @foreach ($totalCategory as $key => $item)
                 <div class="col-md-4 py-3">
                   <div class="d-flex flex-column">
-                    <p>{{$item}}</p>
+                    <a href={{'/productDetail/'.$categoryId[$key]}} class="text-decoration-none mb-2 itemHover">{{$item}}</a>
+                    @foreach ($menu as $item1)
+                      @if ($item1->productCategory === $item)
+                      <p class="text-decoration-none pl-3 mb-2 itemHover"> {{$item1->productName}}</p> 
+                      @endif                    
+                    @endforeach
                   </div>
                 </div>
               @endforeach
