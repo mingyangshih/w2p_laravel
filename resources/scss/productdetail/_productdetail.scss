@@ -39,4 +39,142 @@ $serif: 'Noto Serif TC', serif;
       font-size: 24px;
     }
   }
+  .bookBindingProduct{
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+  @media(max-width: 640px){
+    .bookBindingProduct{
+      padding-bottom: 0;
+    }
+    .bookBinding{
+      h2{
+        font-size: 6vw;
+      }
+    }
+  }
+  .card{
+    max-height: 330px;
+    max-width: 258px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover{
+      .imgBox, .card-body{
+        opacity: .5;
+      }
+    }
+  }
+  @media(max-width: 640px){
+    .card{
+      margin-bottom: 46px;
+    }
+  }
+  // 裝訂方式 下方白色部分
+  .card-body{
+    height: 62px;
+    box-sizing: border-box;
+    h6{
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+  }
+  @media(max-width: 1024px){
+    .card-body{
+      height: 40px;
+      padding:10px 0;
+      font-size: 24px;
+    }
+    h6{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 0.6em;
+    }
+  }
+  // 裝訂方式 相片部分
+  .imgBox{
+    max-height: 258px;
+    max-width: 258px;
+    overflow:hidden;
+    img{
+      max-width: 258px;
+      max-height: 258px;
+      transform:scale(1,1);
+    }
+  }
+  // 裝訂方式，手機版相片間距
+  @media(max-width: 640px){
+    .col-6:nth-child(2n){
+      padding: 0 15px 0 5px;
+    }
+    .col-6:nth-child(2n + 1){
+      padding: 0 5px 0 15px;
+    }
+  }
+  // second banner
+  .secondBanner{
+    max-height: 600px;
+    height: auto;
+    img{
+      width:100%;
+      max-width:100%;
+      height: auto;
+    }
+
+  }
+  @media(max-width: 640px){
+    .secondBannerDesBox{
+      max-height: 676px;
+    }
+  }
+  .secondBannerDesBox{
+    display: flex;
+    justify-content: center;
+  }
+  @media(max-width: 640px){
+    .secondBannerDesBox{
+      padding: 30px 15px;
+    }
+  }
+  .secondBannerDesProduct{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    min-width: 45%;
+    .title{
+      font-size: 32px;
+      font-family: $serif;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
+    p:nth-child(2){
+      margin-bottom: 80px;
+    }
+  }
+  @media(max-width: 1024px){
+    .secondBannerDesProduct{
+      box-sizing: border-box;
+      padding:0 0;
+      max-height: 600px;
+      width: 100%;
+      .title{
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 12px;
+      }
+      p:nth-child(2){
+        margin-bottom: 12px;
+      }
+    }
+  }
+  @media(max-width:1024px){
+    .secondBannerDesProduct{
+      .title{
+        font-size: 23px;
+      }
+    }
+  }
 }

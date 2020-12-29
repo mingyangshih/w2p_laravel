@@ -15,10 +15,12 @@ class productDetailController extends Controller
         $menu = $this->menu;
         $totalCategory = $this->totalCategory;
         $categoryId = $this->categoryId;
-        $getSubMenu = json_decode($this->callAPI('GET','product/getsubmenu/'.$id))->data[0];
-        if($getSubMenu->categoryBanner === null) {
+        $productDetailData = json_decode($this->callAPI('GET','product/getsubmenu/'.$id));
+        
+        if(count($productDetailData->data) === 0 || $productDetailData->data[0]->categoryBanner === null) {
             return redirect('/');
         }else{
+            $getSubMenu = $productDetailData->data[0];
             return View('productdetail',['totalCategory' => $totalCategory, 'menu' => $menu, 'getSubMenu' => $getSubMenu, 'categoryId'=>$categoryId]);
         }
         

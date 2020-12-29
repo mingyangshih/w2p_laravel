@@ -12632,3 +12632,157 @@ p:nth-child(2) {
   font-size: 24px;
 }
 
+.productDetail .bookBindingProduct {
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .productDetail .bookBindingProduct {
+    padding-bottom: 0;
+  }
+
+  .productDetail .bookBinding h2 {
+    font-size: 6vw;
+  }
+}
+
+.productDetail .card {
+  max-height: 330px;
+  max-width: 258px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.productDetail .card:hover .imgBox,
+.productDetail .card:hover .card-body {
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  .productDetail .card {
+    margin-bottom: 46px;
+  }
+}
+
+.productDetail .card-body {
+  height: 62px;
+  box-sizing: border-box;
+}
+
+.productDetail .card-body h6 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .productDetail .card-body {
+    height: 40px;
+    padding: 10px 0;
+    font-size: 24px;
+  }
+
+  .productDetail h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 0.6em;
+  }
+}
+
+.productDetail .imgBox {
+  max-height: 258px;
+  max-width: 258px;
+  overflow: hidden;
+}
+
+.productDetail .imgBox img {
+  max-width: 258px;
+  max-height: 258px;
+  transform: scale(1, 1);
+}
+
+@media (max-width: 640px) {
+  .productDetail .col-6:nth-child(2n) {
+    padding: 0 15px 0 5px;
+  }
+
+  .productDetail .col-6:nth-child(2n+1) {
+    padding: 0 5px 0 15px;
+  }
+}
+
+.productDetail .secondBanner {
+  max-height: 600px;
+  height: auto;
+}
+
+.productDetail .secondBanner img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .productDetail .secondBannerDesBox {
+    max-height: 676px;
+  }
+}
+
+.productDetail .secondBannerDesBox {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .productDetail .secondBannerDesBox {
+    padding: 30px 15px;
+  }
+}
+
+.productDetail .secondBannerDesProduct {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  min-width: 45%;
+}
+
+.productDetail .secondBannerDesProduct .title {
+  font-size: 32px;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.productDetail .secondBannerDesProduct p:nth-child(2) {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+  .productDetail .secondBannerDesProduct {
+    box-sizing: border-box;
+    padding: 0 0;
+    max-height: 600px;
+    width: 100%;
+  }
+
+  .productDetail .secondBannerDesProduct .title {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 12px;
+  }
+
+  .productDetail .secondBannerDesProduct p:nth-child(2) {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .productDetail .secondBannerDesProduct .title {
+    font-size: 23px;
+  }
+}
+

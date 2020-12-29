@@ -35,6 +35,44 @@
           </div>
         </div>
       </div>
+      {{-- 不同的裝訂方式 --}}
+      <div class="container bookBindingProduct">
+        <div class="row justify-content-center">
+          @foreach ($getSubMenu->subProducts as $key => $item)
+            <div class="col-6 col-md-3 text-center mb-3">
+              <div class="card rounded-0">
+                <div class="imgBox">
+                  <a href="">
+                    <img src="/{{$item->subMenuSmallImg}}" alt="{{$item->productName}}" class="card-img-top rounded-0">
+                  </a>                  
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title text-secondary">{{$item->productName}}</h6>
+                </div>
+              </div>
+            </div>
+          @endforeach          
+        </div>
+      </div>
+      {{-- second banner --}}
+      <div class="container-fluid bg-gray secondBannerBox">
+        <div class="row">
+          <div class="col-md-6 secondBannerDesBox">
+            <div class="secondBannerDesProduct">
+              <p class="title text-primary font-weight-bold mb-md-4">{{$getSubMenu->categoryBanner1Title}}</p>
+              <p>{{$getSubMenu->categoryBanner1Desc}}</p>
+              <div class="d-flex try mb-3">
+                <a href="" class="btn btn-primary btnInPage py-0 pr-0">
+                  <span class="font-weight-bold">馬上體驗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-0 secondBanner">
+            <img src="/{{$getSubMenu->categoryBanner1}}" alt="second banner">
+          </div>
+        </div>
+      </div>
     </div>
     
     

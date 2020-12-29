@@ -2,8 +2,8 @@
   <div class="row py-8 justify-content-center">
     <div class="col-md-3 col-6 footerContent">
       <p class="footerTitle font-weight-bold">商品資訊</p>
-      @foreach ($totalCategory as $item)
-        <a href="#" class="link mb-3 text-decoration-none text-dark d-block" >{{$item}}</a>
+      @foreach ($totalCategory as $key => $item)
+        <a href={{'/productDetail/'.$categoryId[$key]}} class="link mb-3 text-decoration-none text-dark d-block" >{{$item}}</a>
       @endforeach
     </div>
     <div class="col-md-6 col-6 d-flex aboutUsBox">
