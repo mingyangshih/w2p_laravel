@@ -3,7 +3,7 @@ $s20: 20px;
 $serif: 'Noto Serif TC', serif;
 .productDetail{
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   .firstBanner{
     width: 100%;
     max-height: 700px;
@@ -175,6 +175,142 @@ $serif: 'Noto Serif TC', serif;
       .title{
         font-size: 23px;
       }
+    }
+  }
+  .satisfyAllNeeds{
+    padding-top: 40px;
+    // padding-bottom: 40px;
+    box-sizing: border-box;
+    .title{
+      font-family: $serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+  }
+  // 第二個banner下方產品介紹樣式設定
+  .specialEffectleft:nth-child(even){
+    .col-md-7{
+      order:2;
+    }
+    .col-md-4{
+      order:1;
+    }
+  }
+  @media(max-width: 640px){
+    .specialEffectleft:nth-child(even){
+      .col-md-7{
+        order:1;
+      }
+      .col-md-4{
+        order:2;
+      }
+    }
+  }
+  .under_secondbanner_des_title{
+    font-size: 27px;
+    word-break: keep-all;
+  }
+  @media(max-width:667px){
+    .under_secondbanner_des_title{
+      // font-size: 4vw;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+  }
+  @media(max-width:640px){
+    .under_secondbanner_des_title{
+      margin-top: 12px;
+      text-align: center;
+    }
+  }
+  .under_secondbanner_des{
+    font-size: 17px;
+  }
+  @media(max-width:640px){
+    .under_secondbanner_des{
+      display: none;
+    }
+  }
+  // 第二個banner產品--左邊圖片--樣式設定
+  .under_second_banner_des_box_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    // margin-left: 40px;
+  }
+  @media(max-width:640px){
+    .under_second_banner_des_box_right{
+      margin-left: 0;
+    }
+  }
+  // 第二個banner產品--右邊圖片--樣式設定
+  .under_second_banner_des_box_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: flex-end;
+    // margin-right: 60px;
+  }
+  @media (min-width: 640px){
+    .col-md-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: none;
+    }
+  }
+  @media(max-width: 640px){
+    .under_second_banner_des_box_left{
+      align-items: center;
+    }
+  }
+  // 背景圖片樣式設定
+  .bgSetting{
+    max-width: 880px;
+    height: auto;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media(max-width: 640px){
+    .bgSetting{
+      max-width: 580px;
+      height: auto;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  // 頁面中的Btn樣式
+  .btnInPage{
+    border-radius: 5px;
+    width: 203px;
+    height: 39px;
+    font-size: 21px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-chevron-right{
+      margin-left: 37px;
+    }
+  }
+  @media(max-width: 1024px){
+    .btnInPage{
+      // width: 332px;
+      padding-left: 0;
+    }
+    .try{
+      display: flex;
+      justify-content: center;
     }
   }
 }

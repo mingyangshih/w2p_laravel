@@ -64,6 +64,7 @@
               <div class="d-flex try mb-3">
                 <a href="" class="btn btn-primary btnInPage py-0 pr-0">
                   <span class="font-weight-bold">馬上體驗</span>
+                  <i class="fas fa-chevron-right fa-xs"></i>
                 </a>
               </div>
             </div>
@@ -72,6 +73,34 @@
             <img src="/{{$getSubMenu->categoryBanner1}}" alt="second banner">
           </div>
         </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row satisfyAllNeeds">
+          <h2 class="title text-center font-weight-bold w-100 mb-0">滿足您所有場景的需求</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid ">
+        @foreach ($getSubMenu->subProducts as $key => $item)
+            <div class="row justify-content-center specialEffectleft  my-5">
+              <div class="col-md-7 standard bgSetting">
+                <img src="/{{$item->subMenuBigImg}}" alt="">
+              </div>
+              <div class="col-md-4">
+                <div class="under_second_banner_des_box_right">
+                  <div class="glasses">
+                    <p class="font-weight-bold text-dark under_secondbanner_des_title">{{$item->productName}}</p>
+                    <p class="under_secondbanner_des">{{$item->productDesc}}</p>
+                    <div class="d-flex try mb-3">
+                      <a href="" class="btn btn-primary btnInPage py-0 pr-0">
+                        <span class="font-weight-bold">我要製作</span> <i class="fas fa-chevron-right fa-xs"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
+            </div>
+        @endforeach
       </div>
     </div>
     
