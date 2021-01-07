@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','App\Http\Controllers\homeController@getHomeData');
 // productdetail
 Route::get('/productDetail/{id}','App\Http\Controllers\productDetailController@init');
-
+// standard 
+Route::get('/standard/{id}','App\Http\Controllers\standardController@init');
 
 
 

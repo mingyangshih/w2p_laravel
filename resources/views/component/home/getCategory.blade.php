@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
       @foreach ($category as $item)
           <div class="col-sm-6 mb-30">
-            <a href="#" class="aChanceInsideBox d-block">
+            <a href="/productDetail/{{$item->categoryId}}" class="aChanceInsideBox d-block">
               <div class="w-40 wordBox d-flex flex-column align-items-center justify-content-center h-100">
                 <p class="wordBoxTitle text-dark">
                   {{$item->categoryName}}
@@ -22,7 +22,7 @@
                   {{$item->categoryEName}}
                 </P>
               </div>
-            <img src="{{$item->categoryImg}}" alt="" class="w-100">
+            <img src="{{$item->categoryImg}}" alt="{{$item->categoryName}}" class="w-100">
             </a>
           </div>
       @endforeach

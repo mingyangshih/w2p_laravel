@@ -1,0 +1,215 @@
+$serif: 'Noto Serif TC', serif;
+.standard{
+  .fz12{
+    font-size: 12px;
+  }
+  .fz26{
+    font-size: 26px;
+  }
+  // 產品規格設定
+  .productTitle{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .secondTitle{
+    font-size: 18px;
+  }
+  // hr 樣式
+  hr{
+    border-top: 1px solid rgba(0,0,0,0.5);
+  }
+  // 下方內容樣式
+  .secondTitle{
+    font-size: 24px;
+    font-family: $serif;
+    letter-spacing: 1px;
+  }
+  // 第二個banner產品介紹樣式設定
+  .under_secondbanner_des_title{
+    font-size: 27px;
+    word-break: keep-all;
+  }
+  @media(max-width:667px){
+    .under_secondbanner_des_title{
+      // font-size: 4vw;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+  }
+  @media(max-width:640px){
+    .under_secondbanner_des_title{
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+  }
+  @media(max-width:823px){
+    .under_secondbanner_des_title{
+      font-size: 22px;
+    }
+  }
+  .under_secondbanner_des{
+    font-size: 17px;
+  }
+  .under_second_banner_des_box_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: flex-start;
+    // margin-right: 60px;
+  }
+  @media (min-width: 640px){
+    .col-md-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: none;
+    }
+  }
+  @media(max-width: 640px){
+    .under_second_banner_des_box_left{
+      align-items: center;
+    }
+  }
+  // 背景圖片樣式設定
+  .bgSetting{
+    max-width: 520px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media(max-width: 640px){
+    .bgSetting{
+      max-width: 580px;
+      height: auto;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  // 網友推薦文章
+  .recommendArticle{
+    background: #f4f4f4;
+  }
+  .eachSuggest{
+    padding: 14px;
+    // height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    width: 100%;
+    .date{
+      font-size: 14px;
+      color: rgba(0,0,0,.4)
+    }
+    a{
+      height: 20px;
+      overflow:hidden;
+    }
+  }
+  @media(min-width: 640px){
+    .eachSuggest{
+      width: 50%;
+    }
+  }
+  // 您還有更多選擇
+  .card{
+    max-height: 320px;
+    max-width: 258px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover{
+      .imgBox, .card-body{
+        opacity: .5;
+      }
+    }
+  }
+  @media(max-width:640px){
+    .card{
+      margin-bottom: 46px;
+    }
+  }
+  // 設定col-md-4的寬度
+  @media(min-width: 640px) {
+    .moreChoicePicBox{
+      justify-content: center;
+      .col-md-4{
+        max-width: 28%;
+      }
+    }
+  }
+  @media(max-width: 640px) {
+    .moreChoicePicBox{
+      justify-content: center;
+    }
+  }
+
+  // 您還有更多選擇  相片下方  白色部分
+  .card-body{
+    height: 64px;
+    box-sizing: border-box;
+    h5{
+      margin-bottom: 0;
+    }
+  }
+  @media(max-width: 640px){
+    .card-body{
+      height: 40px;
+      padding:10px 0;
+      font-size: 24px;
+      h5{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 100%;
+        font-size: .6em;
+      }
+    }
+  }
+
+  // 您還有更多選擇 相片部分
+  .imgBox{
+    max-height: 258px;
+    max-width: 258px;
+    overflow: hidden;
+    img{
+      max-width: 258px;
+      max-height: 258px;
+      transform:scale(1,1);
+      // transition: all 1s ease-out;
+      // &:hover{
+      //   transform:scale(1.2,1.2);
+      // }
+    }
+  }
+  @media(max-width: 640px){
+    .col-6:nth-child(2n){
+    padding: 0 15px 0 5px;
+  }
+    .col-6:nth-child(2n + 1){
+      padding: 0 5px 0 15px;
+    }
+  }
+
+  // 您還有更多選擇的container 設定
+  @media(max-width: 640px){
+    .container{
+      max-width: 100%;
+    }
+  }
+  @media(max-width: 640px){
+    .specialEffectRight{
+      .col-md-5{
+        order:2;
+      }
+      .col-md-7{
+        order:1;
+      }
+    }
+  }
+}

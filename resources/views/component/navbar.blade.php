@@ -15,7 +15,7 @@
                     <a href={{'/productDetail/'.$categoryId[$key]}} class="text-decoration-none mb-2 itemHover">{{$item}}</a>
                     @foreach ($menu as $item1)
                       @if ($item1->productCategory === $item)
-                      <p class="text-decoration-none pl-3 mb-2 itemHover"> {{$item1->productName}}</p> 
+                      <a href="/standard/{{$item1->productId}}" class="text-decoration-none pl-3 mb-2 itemHover"> {{$item1->productName}}</a> 
                       @endif                    
                     @endforeach
                   </div>

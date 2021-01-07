@@ -31,7 +31,7 @@
                     <p class="text-white text-dark">我們的編輯器提供您完美、自由的操作體驗，只有您才能決定您生活的風格。</p>
                 </div>
                 <div class="d-flex try">
-                    <router-link class="btn btn-primary btnInPage py-0 pr-0 text-decoration-none" to="/standard/14"><span class="font-weight-bold">馬上體驗</span> <i class="fas fa-chevron-right fa-xs"></i></router-link>
+                    <a class="btn btn-primary btnInPage py-0 pr-0 text-decoration-none" href="/standard/14"><span class="font-weight-bold">馬上體驗</span> <i class="fas fa-chevron-right fa-xs"></i></a>
                 </div>
             </div>
         </div>

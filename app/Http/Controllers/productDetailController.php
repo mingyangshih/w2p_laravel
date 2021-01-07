@@ -9,7 +9,6 @@ class productDetailController extends Controller
     //
     public function init($id) {
         // 
-        $home = new homeController();
         // navbar footer data
         parent::__construct();
         $menu = $this->menu;

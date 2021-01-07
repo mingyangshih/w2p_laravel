@@ -42,7 +42,7 @@
             <div class="col-6 col-md-3 text-center mb-3">
               <div class="card rounded-0">
                 <div class="imgBox">
-                  <a href="">
+                  <a href="/standard/{{$item->productId}}">
                     <img src="/{{$item->subMenuSmallImg}}" alt="{{$item->productName}}" class="card-img-top rounded-0">
                   </a>                  
                 </div>
@@ -62,7 +62,7 @@
               <p class="title text-primary font-weight-bold mb-md-4">{{$getSubMenu->categoryBanner1Title}}</p>
               <p>{{$getSubMenu->categoryBanner1Desc}}</p>
               <div class="d-flex try mb-3">
-                <a href="" class="btn btn-primary btnInPage py-0 pr-0">
+                <a href="/standard/{{$getSubMenu->subProducts[0]->productId}}" class="btn btn-primary btnInPage py-0 pr-0">
                   <span class="font-weight-bold">馬上體驗</span>
                   <i class="fas fa-chevron-right fa-xs"></i>
                 </a>
@@ -92,7 +92,7 @@
                     <p class="font-weight-bold text-dark under_secondbanner_des_title">{{$item->productName}}</p>
                     <p class="under_secondbanner_des">{{$item->productDesc}}</p>
                     <div class="d-flex try mb-3">
-                      <a href="" class="btn btn-primary btnInPage py-0 pr-0">
+                      <a href="/standard/{{$item->productId}}" class="btn btn-primary btnInPage py-0 pr-0">
                         <span class="font-weight-bold">我要製作</span> <i class="fas fa-chevron-right fa-xs"></i>
                       </a>
                     </div>
