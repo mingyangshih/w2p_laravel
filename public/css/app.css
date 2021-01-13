@@ -13155,3 +13155,47 @@ p:nth-child(2) {
   }
 }
 
+.standard .swiper-container {
+  background-color: rgba(92, 135, 166, 0.2);
+}
+
+.standard .swiper-container {
+  height: auto;
+  max-width: 600px;
+}
+
+.standard .swiper-container.gallery-thumbs {
+  max-width: 600px;
+}
+
+.standard .swiper-slide {
+  max-width: 600px;
+  height: auto;
+}
+
+.standard .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.standard .smallImg {
+  max-width: 73px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .standard .gallery-thumbs {
+    height: 0;
+  }
+}
+
+.standard .gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.standard .gallery-thumbs .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+

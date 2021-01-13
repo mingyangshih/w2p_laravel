@@ -15,7 +15,9 @@ const mix = require('laravel-mix');
 //    .sass('resources/scss/app.scss', 'public/css', [
        
 //    ]);
-mix.sass('resources/scss/app.scss', 'public/css');
-mix.js('resources/js/*.js', 'public/js/').sourceMaps();;
+// mix.sass('resources/scss/app.scss', 'public/css');
+// mix.js('resources/js/*.js', 'public/js/').sourceMaps();
+mix.js('resources/js/*.js', 'public/js')
+    .sass('resources/scss/app.scss', 'public/css');
 
 // mix.browserSync('my-domain.test');

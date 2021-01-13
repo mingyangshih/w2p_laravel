@@ -24,10 +24,11 @@ class standardController extends Controller
             $productItem = $standardData->productItem;
             $productFeature  = $standardData->productFeature;
             $productRecommend = $standardData->productRecommend;
+            $productAlbum = $standardData->productAlbum;
             // 取得大類ID去call api，取得大類下的所有商品
             $subProducts = json_decode($this->callAPI('GET','product/getsubmenu/'.$productItem[0]->categoryId))->data[0]->subProducts;
-            // var_dump($subProducts);
-            return View('standard',['id'=>$id,'totalCategory'=>$totalCategory,'menu'=>$menu,'categoryId'=>$categoryId,'productItem'=>$productItem,'productFeature'=>$productFeature,'productRecommend'=>$productRecommend,'subProducts'=>$subProducts]);
+            // var_dump($productAlbum);
+            return View('standard',['id'=>$id,'totalCategory'=>$totalCategory,'menu'=>$menu,'categoryId'=>$categoryId,'productItem'=>$productItem,'productFeature'=>$productFeature,'productRecommend'=>$productRecommend,'subProducts'=>$subProducts,'productAlbum'=>$productAlbum]);
         }
     }
 }

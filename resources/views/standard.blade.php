@@ -21,7 +21,27 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                @foreach ($productAlbum as $item)
+                  <div class="swiper-slide">
+                    <img src="/{{$item->productAlbum}}" alt="" class="standardLoopImg">
+                  </div> 
+                @endforeach
+                {{-- <div class="swiper-pagination"  slot="pagination"></div> --}}
+              </div>              
+            </div>
+            <div class="swiper-container gallery-thumbs mt-3">
+              <div class="swiper-wrapper">
+                @foreach ($productAlbum as $item)
+                  <div class="swiper-slide smallImg">
+                    <img src="/{{$item->productAlbum}}" alt="">
+                  </div>
+                @endforeach
+              </div>
+            </div>
+          </div>
           <div class="col-md-6"></div>
         </div>
       </div>
@@ -106,7 +126,8 @@
           </div>
           <div class="row pb-5 moreChoicePicBox">
             @foreach ($subProducts as $item)
-              @if ($item->productId!==$id)
+              @if ($item->productId!==$id
+              )
                 <a href="/standard/{{$item->productId}}" class="col-md-3 col-6 d-flex justify-content-center mb-md-3 text-decoration-none">
                   <div class="card">
                     <div class="imgBox">
@@ -124,5 +145,7 @@
       @endif
       
     </div>
+    {{-- 自己寫的sweiprjs --}}
+    <script src="/js/standard_swiper.js"></script>
   @endsection
   

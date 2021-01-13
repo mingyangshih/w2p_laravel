@@ -212,4 +212,42 @@ $serif: 'Noto Serif TC', serif;
       }
     }
   }
+  // 上方swiper
+  .swiper-container {
+    background-color: rgba(92,135,166,.2);
+  }
+  .swiper-container{
+    height: auto;
+    max-width: 600px;
+    &.gallery-thumbs{
+      max-width: 600px;
+    }
+  }
+  .swiper-slide{
+    max-width: 600px;
+    height: auto;
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+  .smallImg{
+    max-width: 73px;
+    height: auto;
+  }
+  @media(max-width: 640px){
+    .gallery-thumbs{
+      height: 0;
+    }
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    // 輪到的時候標明顯一點
+    &.swiper-slide-active{
+      opacity: 1;
+    }
+  }
+  
 }
