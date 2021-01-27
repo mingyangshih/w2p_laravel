@@ -15,7 +15,6 @@ class standardController extends Controller
         $menu = $this->menu;
         $categoryId = $this->categoryId;
         // get standard page data
-        // $test=file_get_contents(env('API_PATh').'product/getdetail/'.$id);
         $standardData = json_decode($this->callAPI('GET','product/getdetail/'.$id))->data;
         // var_dump($standardData);
         if($standardData === "") {

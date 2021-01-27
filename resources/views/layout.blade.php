@@ -42,7 +42,7 @@
     {{-- 自己寫的css --}}
     <link rel="stylesheet" href="/css/app.css">
   </head>
-  <body onLoad="tpxHighLevelBasketInitialise()">
+  <body onLoad="tpxHighLevelBasketInitialise()" >
     <!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNRN29J"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

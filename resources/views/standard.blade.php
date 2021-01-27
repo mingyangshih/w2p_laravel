@@ -42,7 +42,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6" id="vueComponent">
+              <standard/>
+          </div>
         </div>
       </div>
       {{-- 產品特性 --}}
@@ -147,5 +149,7 @@
     </div>
     {{-- 自己寫的sweiprjs --}}
     <script src="/js/standard_swiper.js"></script>
+    {{-- <script src="/js/standard_vue.js"></script> --}}
+    <script src="/js/app.js"></script>
   @endsection
   
