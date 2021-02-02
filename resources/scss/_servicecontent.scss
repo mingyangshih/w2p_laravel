@@ -1,0 +1,87 @@
+// 右邊的部分
+@media(max-width:641px){
+  .desktopContent{
+    display: none;
+  }
+}
+.title{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Noto Serif TC",serif;
+}
+@media(min-width:641px){
+  .mobileContent{
+    display: none;
+  }
+  .destitle{
+    line-height: 18px;
+    display: block;
+    cursor: pointer;
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+  }
+}
+.plus{
+  width: 20px;
+  height: 20px;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 16px;
+  &:hover{
+    background: #000;
+  }
+}
+.minus{
+  width: 20px;
+  height: 20px;
+  background: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 16px;
+}
+input:checked ~ .labelContent > .plus{
+  display: none;
+}
+input:checked ~ .labelContent > .minus{
+  display: flex;
+}
+.indent{
+  display: none;
+  margin-top: 16px;
+}
+input:checked ~ .indent{
+  display: initial;
+  margin-top: 24px;
+}
+input ~ .imgBoxServiceContent{
+  display: none;
+}
+input:checked ~ .imgBoxServiceContent{
+  display: flex;
+  max-width: 980px;
+}
+@media(max-width: 641px){
+  input:checked ~ .imgBoxServiceContent{
+    display: initial;
+    max-width: 100%;
+  }
+}
+input ~ .imgBoxServiceContent > img{
+  display: none;
+}
+input:checked ~ .imgBoxServiceContent > img{
+  display: initial;
+  width:100%;
+}

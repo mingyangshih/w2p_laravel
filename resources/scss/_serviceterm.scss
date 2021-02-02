@@ -1,0 +1,25 @@
+.serviceterm{
+  .pageTitle{
+    font-size: 32px;
+    font-family: "Noto Serif TC",serif;
+    font-weight: bold;
+  }
+  .termTitle{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .termDetail{
+    margin-left : 1.1em;
+    text-indent : -1.1em ;
+    line-height: 2rem;
+  }
+  @media(max-width:640px){
+    .termDetail{
+      margin-left : 0em;
+      text-indent : 0em ;
+    }
+  }
+  .termDetailUnorder{
+    line-height: 2rem;
+  }
+}

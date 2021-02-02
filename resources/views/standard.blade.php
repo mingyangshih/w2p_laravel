@@ -145,7 +145,12 @@
           </div>
         </div>
       @endif
-      
+      {{-- footer --}}
+      <div class="container-fluid border-top px-0 footer">
+        <footer class="container">
+          @yield('footer')
+        </footer>
+      </div>
     </div>
     {{-- 自己寫的sweiprjs --}}
     <script src="/js/standard_swiper.js"></script>

@@ -1,0 +1,101 @@
+$nototc: "Noto Serif TC",serif;
+.aboutYFP{
+  
+  .pageTitle{
+    font-size: 24px;
+    font-family:$nototc;
+    font-weight: bold;
+  }
+  .aboutYFPImg{
+    max-height: 760px;
+    min-width: 100%;
+  }
+  .aboutYFPImgDes{
+    font-size: 20px;
+  }
+  .printExperienceFirstDes{
+    max-width: 1300px;
+    .col-md-3{
+      max-width:226px;
+      padding: 0;
+    }
+    img{
+      max-width: 226px;
+    }
+  }
+  @media(max-width: 640px){
+    .aboutYFPImgDes{
+      padding: 0 16px;
+    }
+    .printExperienceFirstDes{
+      max-width: 1300px;
+      padding: 0 12px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  .wontRegretBlueBg{
+    background: #577f99;
+    box-sizing: border-box;
+  }
+  .wontRegretDarkBg{
+    background: #44505e;
+    // padding: 50px 0;
+    box-sizing: border-box;
+  }
+  @media(max-width: 640px){
+    .wontRegretBlueBg{
+      padding: 50px 0;
+    }
+    .wontRegretDarkBg{
+      padding: 50px 0;
+    }
+    .wontRegretTitle{
+      font-size: 24px;
+    }
+    .wontRegretSecondTitle{
+      font-size: 18px;
+    }
+  }
+  // 按鈕
+  .btnInPage{
+    border-radius: 5px;
+    width: 203px;
+    height: 39px;
+    font-size: 21px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: white;
+    .fa-chevron-right{
+      margin-left: 37px;
+    }
+  }
+  // reverse 排版
+  @media(max-width: 640px){
+    .reverse{
+      flex-direction: column-reverse;
+    }
+  }
+  .bgSetting{
+    max-width:800px;
+    height:auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    img.newEditor{
+      width: 90%;
+      height: auto;
+    }
+  }
+  @media(max-width:640px){
+    img.newEditor{
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}

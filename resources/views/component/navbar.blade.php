@@ -25,7 +25,9 @@
           </div>
         </nav>
         {{-- 幫助中心 --}}
-        <nav class="item helpCenter mb-0 align-items-center">幫助中心</nav>
+        <nav class="item helpCenter mb-0 align-items-center">
+          <a href="/servicecontent" class="text-dark text-decoration-none">幫助中心</a>
+        </nav>
         <nav class="item helpCenter mb-0 align-items-center activity">抽獎活動</nav>
         <nav class="text-dark item aboutUs mb-0 align-items-center text-decoration-none">關於我們</nav>
         <nav class="item contactUs mb-0 align-items-center">聯絡我們</nav>
