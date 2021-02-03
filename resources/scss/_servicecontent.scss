@@ -85,3 +85,20 @@ input:checked ~ .imgBoxServiceContent > img{
   display: initial;
   width:100%;
 }
+
+// service content mobild 上方下拉
+label[for="dropdown"]{
+  display:none;
+}
+
+@media(max-width:641px){
+  label[for="dropdown"]{
+    display:initial;
+  }
+  input  ~ .col-md-2 {
+    display:none;
+  }
+  input:checked  ~ .col-md-2 {
+    display:initial;
+  }
+}
