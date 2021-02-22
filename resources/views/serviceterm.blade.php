@@ -1,17 +1,6 @@
-@include('./component/navbar')
-@include('./component/footer')
-
-
 @extends('layout')
   @section('title', '服務使用條款')
   @section('content')
-    <div class="container-fluid px-0  bg-primary">
-      <div class="p-3 container text-white text-center">
-        新平台，新體驗，正式上線！
-      </div>
-    </div>
-    {{-- navbar --}}
-    @yield('navbar')
     {{-- serviceterm --}}
     <div class="serviceterm">
       <div class="container px-0">
@@ -128,12 +117,6 @@
         <p class="text-justify mb-8 termDetailUnorder">
           您在本服務中瀏覽到的所有廣告內容、文字與圖片之說明、展示樣品或其他銷售資訊，均由各該廣告商、產品與服務的供應商所設計與提出。您對於廣告之正確性與可信度應自行斟酌與判斷。永豐雲端印刷網僅接受委託予以刊登，不對前述廣告負擔保責任。
         </p> 
-      </div>
-      {{-- footer --}}
-      <div class="container-fluid border-top px-0 footer">
-        <footer class="container">
-          @yield('footer')
-        </footer>
       </div>
     </div>
   @endsection

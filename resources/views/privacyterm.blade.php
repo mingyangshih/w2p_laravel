@@ -1,15 +1,5 @@
-@include('./component/navbar')
-@include('./component/footer')
-
 @extends('layout')
 @section('content')
-  <div class="container-fluid px-0  bg-primary">
-    <div class="p-3 container text-white text-center">
-      新平台，新體驗，正式上線！
-    </div>
-  </div>
-  {{-- navbar --}}
-  @yield('navbar')
   {{-- privacy term --}}
   <div class="privacyterm">
     <div class="container px-0">
@@ -249,12 +239,6 @@
       <p class="termDetailUnorder text-justify mb-8">
         客服信箱：services@cloudw2p.com
       </p> 
-    </div>
-    {{-- footer --}}
-    <div class="container-fluid border-top px-0 footer">
-      <footer class="container">
-        @yield('footer')
-      </footer>
     </div>
   </div>
     

@@ -1,17 +1,7 @@
-@include('./component/navbar')
-@include('./component/footer')
 @include('./component/serviceContentNav')
 
 @extends('layout')
 @section('content')
-  <div class="container-fluid px-0  bg-primary">
-    <div class="p-3 container text-white text-center">
-      新平台，新體驗，正式上線！
-    </div>
-  </div>
-  {{-- navbar --}}
-  @yield('navbar')
-
   <div class="serviceContent mt-30">
     <div class="container">
       <div class="row">
@@ -289,19 +279,10 @@
                 <div class="imgBoxServiceContent ml-md-3"><img src="/static/assets/img/serviceContent/4-5.jpg" alt="" class="img-fluid mt-3"></div>
               </div>
               <hr>
-
-                
-                
             </div>
           </div>
         </div>
       </div>
-    </div>
-    {{-- footer --}}
-    <div class="container-fluid border-top px-0 footer">
-      <footer class="container">
-        @yield('footer')
-      </footer>
     </div>
   </div>
     

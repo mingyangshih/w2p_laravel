@@ -1,15 +1,6 @@
-@include('./component/navbar')
-@include('./component/footer')
-
 @extends('layout')
   @section('title', $productItem[0]->productName)
   @section('content')
-    <div class="container-fluid px-0  bg-primary">
-      <div class="p-3 container text-white text-center">
-        新平台，新體驗，正式上線！
-      </div>
-    </div>
-    @yield('navbar')
 
     <div class="standard">
       <div class="container d-flex my-3">
@@ -145,13 +136,6 @@
           </div>
         </div>
       @endif
-      {{-- footer --}}
-      <div class="container-fluid border-top px-0 footer">
-        <footer class="container">
-          @yield('footer')
-        </footer>
-      </div>
-    </div>
     {{-- 自己寫的sweiprjs --}}
     <script src="/js/standard_swiper.js"></script>
     {{-- <script src="/js/standard_vue.js"></script> --}}

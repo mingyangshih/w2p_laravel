@@ -1,17 +1,6 @@
-@include('./component/navbar')
-@include('./component/footer')
-
-
 @extends('layout')
   @section('title', '關於永紙')
   @section('content')
-    <div class="container-fluid px-0  bg-primary">
-      <div class="p-3 container text-white text-center">
-        新平台，新體驗，正式上線！
-      </div>
-    </div>
-    {{-- navbar --}}
-    @yield('navbar')
     {{-- 關於我們 --}}
     <div class="aboutYFP">
       <div class="container px-0">
@@ -98,12 +87,6 @@
             <img src="/static/3c.jpg" alt="" class="newEditor">
           </div>
         </div>
-      </div>
-      {{-- footer --}}
-      <div class="container-fluid border-top px-0 footer">
-        <footer class="container">
-          @yield('footer')
-        </footer>
       </div>
     </div>
   @endsection

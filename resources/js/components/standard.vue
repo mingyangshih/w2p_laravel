@@ -52,8 +52,9 @@
         <!-- 編輯連結 -->
         <div class="d-flex btnBox">
             <a href="" class="btn btn-outline-primary font-weight-bold btnInPage teachEdit" v-if="materialPage === 'Y'">紙材介紹</a>
-            <a href="" class="btn btn-outline-primary font-weight-bold btnInPage teachEdit">編輯教學</a>
+            <a href="/servicecontent" class="btn btn-outline-primary font-weight-bold btnInPage teachEdit">編輯教學</a>
             <a :href="specIdSizeIdInfo.link" class="btn btn-primary font-weight-bold btnInPage py-0 text-white startEdit" v-if="specIdSizeIdInfo.cnt === 1">開始製作</a>
+            <a href="" v-if="specIdSizeIdInfo.cnt !== 1" class="btn btn-primary font-weight-bold btnInPage py-0 text-white chooseStyle">選擇風格</a>
         </div>
     </div>
 </template>

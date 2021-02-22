@@ -1,18 +1,11 @@
-@include('./component/navbar')
-@include('./component/footer')
+
 
 @extends('layout')
 
   @section('title',$getSubMenu->categoryName)
   
   @section('content')
-    <div class="container-fluid px-0  bg-primary">
-      <div class="p-3 container text-white text-center">
-        新平台，新體驗，正式上線！
-      </div>
-    </div>
-    {{-- 上方選單 --}}
-    @yield('navbar')
+    
     {{-- 主要內容 --}}
     <div class="productDetail">
       <div class="container d-flex my-3">
@@ -102,15 +95,5 @@
             </div>
         @endforeach
       </div>
-    </div>
-    
-    
-    
-    
-    {{-- footer --}}
-    <div class="container-fluid border-top px-0 footer">
-      <footer class="container">
-        @yield('footer')
-      </footer>
     </div>
   @endsection

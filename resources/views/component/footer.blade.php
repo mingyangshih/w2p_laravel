@@ -15,16 +15,16 @@
       </div>
       <div class="saledServiceBox w-100 w-md-50">
         <p class="footerTitle font-weight-bold">服務內容</p> 
-        <a href="#" class="mb-3 text-decoration-none d-block text-dark link">編輯教學</a>
-        <a href="#" class="mb-3 text-decoration-none d-block text-dark link">關於會員</a>
-        <a href="#" class="mb-3 text-decoration-none d-block text-dark link">作品編排須知</a>
-        <a href="#" class="mb-3 text-decoration-none d-block text-dark link">訂購與取貨</a>
-        <a href="#" class="mb-3 text-decoration-none d-block text-dark link">發票與售後服務</a>
+        <a href="/servicecontent" class="mb-3 text-decoration-none d-block text-dark link">編輯教學</a>
+        <a href="/servicecontent/aboutMember" class="mb-3 text-decoration-none d-block text-dark link">關於會員</a>
+        <a href="/servicecontent/workslayout" class="mb-3 text-decoration-none d-block text-dark link">作品編排須知</a>
+        <a href="/servicecontent/buyAndTake" class="mb-3 text-decoration-none d-block text-dark link">訂購與取貨</a>
+        <a href="/servicecontent/invoiceAndSaledService" class="mb-3 text-decoration-none d-block text-dark link">發票與售後服務</a>
       </div>
     </div>
     <div class="col-md-3 px-0 mx-0 contactUsBox">
       <p class="footerTitle font-weight-bold contactUsTitlePC d-block">聯絡我們</p>
-      <a href="#" class="d-block mb-3 text-decoration-none link text-dark">客服信箱</a>
+      <a href="/servicecontent/contactus" class="d-block mb-3 text-decoration-none link text-dark">客服信箱</a>
       <p class="workTimePC">週一至週五 ( 非例假日 )</p>
       <p class="workTimePC">10:00 ~ 12:00 及 13:00 ~ 17:00</p>
       <p class="workTimeMB">週一至週五 ( 非例假日 )</p>

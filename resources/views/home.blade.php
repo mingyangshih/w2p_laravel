@@ -3,26 +3,13 @@
 @include('./component/home/swiper')
 @include('./component/home/secondBanner')
 @include('./component/home/getCategory')
-@include('./component/footer')
-@include('./component/navbar')
+
 
 @extends('layout')
 
   @section('title', '首頁')
 
-  @section('content')
-
-    {{-- 最上方公告 --}}
-    <div class="container-fluid px-0  bg-primary">
-      <div class="p-3 container text-white text-center">
-        新平台，新體驗，正式上線！
-      </div>
-    </div>
-    
-    
-    @yield('navbar')
-    
-    
+  @section('content')  
     {{-- home swiper --}}
     <header class="container-fluid">
       {{-- swiper  api--}}
@@ -45,12 +32,6 @@
     {{-- 一個機會讓生活獨特 --}}
     @yield('category')
     
-    {{-- footer --}}
-    <div class="container-fluid border-top px-0 footer">
-      <footer class="container">
-        @yield('footer')
-      </footer>
-    </div>
     
     {{-- 自己寫的sweiprjs --}}
     <script src="/js/swiper.js"></script>

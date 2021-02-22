@@ -1,3 +1,6 @@
+@include('./component/footer')
+@include('./component/copyright')
+@include('./component/navbar')
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,13 +47,28 @@
   </head>
   <body onLoad="tpxHighLevelBasketInitialise()" >
     <!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNRN29J"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNRN29J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-    @yield('content')
+    {{-- 最上方公告 --}}
+    <div class="container-fluid px-0  bg-primary">
+      <div class="p-3 container text-white text-center">
+        新平台，新體驗，正式上線！
+      </div>
+    </div>
+    {{-- navbar --}}
+    @yield('navbar')    
     
-    @section('copyright')
-      @include('./component/copyright')
-    @show
+    @yield('content')
+    {{-- footer --}}
+    <div class="container-fluid border-top px-0 footer">
+      <footer class="container">
+        @yield('footer')
+      </footer>
+    </div>
+    
+    {{-- copyright --}}
+    @yield('copyright')
   </body>
+  
 </html>
